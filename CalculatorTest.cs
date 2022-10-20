@@ -19,7 +19,6 @@ public class CalculatorTest
     }
 
     [Fact]
-
     public void Minus()
     {
         // Arrange
@@ -32,7 +31,19 @@ public class CalculatorTest
 
         // Assert
         Assert.Equal(20, result);
+    }
 
+    [Fact]
+    public void Divide()
+    {
+        // Arrange
+        var calculator = new Calculator();
+        var num1 = 24;
+        var num2 = 6;
+        // Act
+        var result = calculator.Divide(num1, num2);
 
+        // Assert
+        Assert.Equal(4, result);
     }
 }
