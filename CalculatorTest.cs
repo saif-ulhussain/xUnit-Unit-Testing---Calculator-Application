@@ -40,10 +40,26 @@ public class CalculatorTest
         var calculator = new Calculator();
         var num1 = 24;
         var num2 = 6;
+
         // Act
         var result = calculator.Divide(num1, num2);
 
         // Assert
         Assert.Equal(4, result);
+    }
+
+    [Fact]
+    public void Multiply()
+    {
+        // Arrange
+        var calculator = new Calculator();
+        var num1 = 5;
+        var num2 = 5;
+
+        // Act
+        var result = calculator.Multiply(num1, num2);
+
+        // Assert
+        Assert.Equal(25, result);
     }
 }
