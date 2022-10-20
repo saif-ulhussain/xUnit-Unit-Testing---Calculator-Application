@@ -17,4 +17,22 @@ public class CalculatorTest
         // Assert
         Assert.Equal(10, result);
     }
+
+    [Fact]
+
+    public void Minus()
+    {
+        // Arrange
+        var calculator = new Calculator();
+        var num1 = 50;
+        var num2 = 30;
+
+        // Act
+        var result = calculator.Minus(num1, num2);
+
+        // Assert
+        Assert.Equal(20, result);
+
+
+    }
 }
